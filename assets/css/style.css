@@ -160,11 +160,12 @@ section:nth-child(odd) {
 } */
 /* OLD CSS */
 
-#contact .slide {
+#about .slide, #portfolio .slide, #contact .slide {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 
 .contactIcons {
     display: flex;
