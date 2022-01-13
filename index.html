@@ -7,13 +7,13 @@
     <title>Josh Yap</title>    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav>
-        <a href="" class="logo"><img src="assets/images/JY_logo_white.png" alt="Josh Yap personal logo" id="logo"></a>
+        <a href="" class="logo"><img src="assets/images/jy_logo_colored.png" alt="Josh Yap personal logo" id="logo"></a>
         <ul>
             <li><a href="#about">about</a></li>
             <li><a href="#portfolio">portfolio</a></li>            
@@ -45,12 +45,13 @@
             </div>            
         </div>   
         <div class="nextSection">
-            <a href="#portfolio" class="nextSection">&#8595;</a>            
+            <a href="#portfolio1" class="nextSection">&#8595;</a>            
         </div>
     </section>
-    <section id="portfolio">
-        <div class="slide">
-            <h1>portfolio</h1>
+    
+    <section id="portfolio1">
+        <h1>portfolio</h1>
+        <div class="portfolioSlide">            
             <div class="portfolioItems">
                 <div>
                     <a href="https://twitter.com/yapsays"><img src="assets/images/yapsays.png" alt="twitter bot screenshot" class="portfolioImage"></a>                    
@@ -65,34 +66,61 @@
                 <div class="portfolioDescription">
                     <h4><a href="https://github.com/joshyap/x509-cert-formatter">X509 Certificate Formatter</a></h4>
                     <p>This CLI program was written in python in order to make a common task in my day job much easier and quicker. The program takes an input string and formats it as an certificate so that you do not need to manually manipulate or check its validitiy.</p>
-                </div>
-                <div>
-                    <a href="http://voowols.surge.sh/"><img src="assets/images/voowols.png" alt="voowols app screenshot" class="portfolioImage"></a>                    
-                </div>
-                <div class="portfolioDescription">
-                    <h4><a href="http://voowols.surge.sh/">Voowols</a></h4>
-                    <p>Some coworkers and I came up with a slack channel in which we have to follow a special rule for messaging. For every letter in a word, every vowel is replaced with an "o" and every "o" is replaced with "oo". It is written in javascript, users a bit of bootstrap for styling, and utilizes the Speech Synthesis Web API to read converted text in a variety of voices, accents, pitches, and languages.</p>
-                </div>
-                <div>
-                    <a href="https://joshyap.github.io/pw-generator/"><img src="assets/images/pw-generator.png" alt="password generator screenshot" class="portfolioImage"></a>                                 
-                </div>
-                <div class="portfolioDescription">
-                    <h4><a href="https://joshyap.github.io/pw-generator/">Password Generator</a></h4>
-                    <p>This password generator generates a randomized password based on user selected contraints for length, lowercase/uppercase, special characters, and numbers. </p>
-                </div>
-                <div>
-                    <a href="https://joshyap.github.io/scheduler/"><img src="assets/images/workday-scheduler.png" alt="workday scheduler app screenshot" class="portfolioImage"></a>                    
-                </div>
-                <div class="portfolioDescription">
-                    <h4><a href="https://joshyap.github.io/scheduler/">Day Scheduler</a></h4>
-                    <p>This workday scheduling application utilizes local storage to save user input for every hour block of the day. The hour blocks are color coded to indiciate past, present, and future states relative to the current time and are updated on a timer. The next iteration of this app will replace local storage with database functionality and additional options for personalization.</p>
-                </div>
+                </div>                                
             </div>
         </div>
         <div class="nextSection">
-            <a href="#contact" class="nextSection">&#8595;</a>            
+            <a href="#portfolio2" class="nextSection">&#8595;</a>            
+        </div>        
+    </section>
+   
+    
+    <section id="portfolio2">
+        <div class="portfolioItems">
+            <div>
+                <a href="http://voowols.surge.sh/"><img src="assets/images/voowols.png" alt="voowols app screenshot" class="portfolioImage"></a>                    
+            </div>
+            <div class="portfolioDescription">
+                <h4><a href="http://voowols.surge.sh/">Voowols</a></h4>
+                <p>Some coworkers and I came up with a slack channel in which we have to follow a special rule for messaging. For every letter in a word, every vowel is replaced with an "o" and every "o" is replaced with "oo". It is written in javascript, users a bit of bootstrap for styling, and utilizes the Speech Synthesis Web API to read converted text in a variety of voices, accents, pitches, and languages.</p>
+            </div>
+            <div>
+                <a href="https://joshyap.github.io/pw-generator/"><img src="assets/images/pw-generator.png" alt="password generator screenshot" class="portfolioImage"></a>                                 
+            </div>
+            <div class="portfolioDescription">
+                <h4><a href="https://joshyap.github.io/pw-generator/">Password Generator</a></h4>
+                <p>This password generator generates a randomized password based on user selected contraints for length, lowercase/uppercase, special characters, and numbers. </p>
+            </div>
+        </div>
+        <div class="nextSection">
+            <a href="#portfolio3" class="nextSection">&#8595;</a>
         </div>
     </section>
+
+
+    <section id="portfolio3">
+        <div class="portfolioItems">
+            <div>
+                <a href="https://joshyap.github.io/scheduler/"><img src="assets/images/workday-scheduler.png" alt="workday scheduler app screenshot" class="portfolioImage"></a>                    
+            </div>
+            <div class="portfolioDescription">
+                <h4><a href="https://joshyap.github.io/scheduler/">Day Scheduler</a></h4>
+                <p>This workday scheduling application utilizes local storage to save user input for every hour block of the day. The hour blocks are color coded to indiciate past, present, and future states relative to the current time and are updated on a timer. The next iteration of this app will replace local storage with database functionality and additional options for personalization.</p>
+            </div>
+            <div>
+                <a href="https://rockets-email.surge.sh/"><img src="assets/images/rockets-email.png" alt="demo responsive email" class="portfolioImage"></a>                    
+            </div>
+            <div class="portfolioDescription">
+                <h4><a href="https://github.com/joshyap/responsive-rockets-email">Demo Responsive Email</a></h4>
+                <p>In order to send responsive emails out for a project that had a particularly varied user base, I had to look into how to make responsive emails to handle different email clients. This demo email was made using the <a href="https://mjml.io/">MJML</a> framework and was a very pleasant experience, especially compared to hand coding every detail of the email layouts.</p>
+            </div>
+        </div>
+        <div class="nextSection">
+            <a href="#contact" class="nextSection">&#8595;</a>
+        </div>
+    </section>
+
+
     <section id="contact">
         <div class="slide">
             <h1>contact</h1>
