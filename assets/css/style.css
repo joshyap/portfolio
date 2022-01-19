@@ -71,6 +71,10 @@ nav ul li {
     align-items: center;
 }
 
+.sectionTitle {
+    height: 10vh;
+}
+
 .nextSection {
     height: 10vh;
     display: flex;
@@ -134,7 +138,8 @@ section:nth-child(odd), section:nth-child(odd) a {
     width: 100%; */
     display: grid;
     grid-template-columns: 40vw 40vw; 
-    grid-template-rows: 40vh 40vh;
+    grid-template-rows: 30vh 30vh;
+    grid-gap: 10vh;
     align-items: center;
     justify-content: center;
 }
