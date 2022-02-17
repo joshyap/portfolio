@@ -169,8 +169,8 @@ section:nth-child(odd), section:nth-child(odd) a {
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
-    font-size: 4em;
-    color: var(--main-bg-color);
+    font-size: 4em;    
+    color: var(--main-text-color);
 }
 
-.contactIcons a {color: var(--main-bg-color);}
+.contactIcons a {color: var(--main-text-color);}
