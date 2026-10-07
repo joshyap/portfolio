@@ -2,163 +2,169 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josh Yap</title>    
+    <title>Josh Yap · Data Projects</title>
+    <meta name="description" content="Data projects by Josh Yap: scrapers, pipelines, dashboards and visualizations.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <nav>
-        <a href="" class="logo"><img src="assets/images/jy_logo_colored.png" alt="Josh Yap personal logo" id="logo"></a>
-        <ul>
-            <li><a href="#about">about</a></li>
-            <li><a href="#portfolio">portfolio</a></li>            
-            <li><a href="#contact">contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="landing">
-            <div class="left">
-                <h1>josh yap.</h1>
-                <h2>I make things.</h2>
+    <header class="site-header">
+        <a href="#top" class="brand" aria-label="Josh Yap, back to top">
+            <img src="assets/logo.png" alt="Josh Yap logo" class="brand-logo">
+        </a>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="hero-text">
+                <p class="eyebrow mono">&gt; SELECT * FROM projects;</p>
+                <h1>I turn messy data into<br><span class="accent">something useful.</span></h1>
+                <p class="lede">Data engineer and builder. I scrape it, pipe it, chart it, and ship it, usually because I was curious about something.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">See the projects</a>
+                    <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                </div>
             </div>
-            <div class="right">
-                <img src="assets/images/josh-profile-photo.jpeg" alt="photo of josh holding a camera" class="roundImage profile-photo">
+            <svg class="hero-chart" viewBox="0 0 400 260" role="img" aria-label="Decorative line and bar chart">
+                <g class="grid">
+                    <line x1="20" y1="40"  x2="390" y2="40"/>
+                    <line x1="20" y1="100" x2="390" y2="100"/>
+                    <line x1="20" y1="160" x2="390" y2="160"/>
+                    <line x1="20" y1="220" x2="390" y2="220"/>
+                </g>
+                <g class="bars">
+                    <rect x="34"  y="170" width="26" height="50"  rx="3"/>
+                    <rect x="80"  y="140" width="26" height="80"  rx="3"/>
+                    <rect x="126" y="155" width="26" height="65"  rx="3"/>
+                    <rect x="172" y="110" width="26" height="110" rx="3"/>
+                    <rect x="218" y="125" width="26" height="95"  rx="3"/>
+                    <rect x="264" y="80"  width="26" height="140" rx="3"/>
+                    <rect x="310" y="60"  width="26" height="160" rx="3" class="hl"/>
+                </g>
+                <polyline class="line" points="47,150 93,118 139,132 185,88 231,100 277,58 323,36 370,22"/>
+                <circle class="dot" cx="323" cy="36" r="5"/>
+            </svg>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-head">
+                <p class="eyebrow mono">01 / projects</p>
+                <h2>Data projects</h2>
             </div>
-        </div>
-        <div class="nextSection">
-            <a href="#about" class="nextSection">&#8595;</a>            
-        </div>
+
+            <div class="project-grid">
+                <article class="card">
+                    <a href="https://github.com/joshyap/ercot" target="_blank" rel="noopener noreferrer" class="card-media">
+                        <img src="assets/ercot.png" alt="ERCOT grid monitor screenshot" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>ERCOT Grid Monitor</h3>
+                        <p>Built during the 2022 Texas winter storm. Scrapes ERCOT's real-time system conditions page, pulls current demand and capacity, and flags whether the grid can keep up.</p>
+                        <ul class="tags mono"><li>node.js</li><li>web scraping</li><li>real-time</li></ul>
+                        <div class="card-links">
+                            <a href="https://github.com/joshyap/ercot" target="_blank" rel="noopener noreferrer">code</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <a href="https://github.com/joshyap/gme" target="_blank" rel="noopener noreferrer" class="card-media card-media-svg" aria-label="GME stock dashboard on GitHub">
+                        <svg viewBox="0 0 300 160" aria-hidden="true">
+                            <g class="bars small">
+                                <rect x="12"  y="132" width="14" height="18"/><rect x="34"  y="128" width="14" height="22"/>
+                                <rect x="56"  y="110" width="14" height="40"/><rect x="78"  y="60"  width="14" height="90"/>
+                                <rect x="100" y="30"  width="14" height="120" class="hl"/><rect x="122" y="70" width="14" height="80"/>
+                                <rect x="144" y="96"  width="14" height="54"/><rect x="166" y="104" width="14" height="46"/>
+                                <rect x="188" y="88"  width="14" height="62"/><rect x="210" y="112" width="14" height="38"/>
+                                <rect x="232" y="100" width="14" height="50"/><rect x="254" y="118" width="14" height="32"/>
+                                <rect x="276" y="108" width="14" height="42"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <div class="card-body">
+                        <h3>GME Stock Dashboard</h3>
+                        <p>A Streamlit app that pulls GameStop's daily price history from Yahoo Finance and charts closing price and volume from the late-2020 run-up to today.</p>
+                        <ul class="tags mono"><li>python</li><li>streamlit</li><li>yfinance</li></ul>
+                        <div class="card-links">
+                            <a href="https://github.com/joshyap/gme" target="_blank" rel="noopener noreferrer">code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <a href="https://voluntold.surge.sh/" target="_blank" rel="noopener noreferrer" class="card-media">
+                        <img src="assets/voluntold.png" alt="VolunTOLD app screenshot" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>VolunTOLD</h3>
+                        <p>A random student picker I built as a bootcamp TA. It tracks every pick and renders the distribution as a Plotly bar chart, so anyone who's been unusually unlucky is easy to spot.</p>
+                        <ul class="tags mono"><li>javascript</li><li>plotly</li><li>distributions</li></ul>
+                        <div class="card-links">
+                            <a href="https://voluntold.surge.sh/" target="_blank" rel="noopener noreferrer">live</a>
+                            <a href="https://github.com/joshyap/voluntold" target="_blank" rel="noopener noreferrer">code</a>
+                        </div>
+                    </div>
+                </article>
+
+
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="section-head">
+                <p class="eyebrow mono">02 / about</p>
+                <h2>About me</h2>
+            </div>
+            <div class="about-grid">
+                <img src="../assets/images/josh-profile-photo.jpeg" alt="Josh holding a camera" class="about-photo">
+                <div class="about-text">
+                    <p>I'm Josh. I got into software because I had an idea for a business and couldn't stand letting someone else build it. The business was a highlight of my life, but the bigger takeaway was finding out how much I love writing code.</p>
+                    <p>Since then I've worked at startups and larger companies in increasingly technical roles, mostly in data engineering and support engineering. My favorite problems involve pulling data out of awkward places, cleaning it up, and turning it into something a person can actually act on.</p>
+                    <p>Away from the keyboard you'll find me playing basketball and tennis, cycling, hiking, or deep in a euro board game.</p>
+                    <dl class="stats">
+                        <div><dt class="mono">focus</dt><dd>Data engineering</dd></div>
+                        <div><dt class="mono">stack</dt><dd>Python · SQL · Excel</dd></div>
+                        <div><dt class="mono">based in</dt><dd>Austin, TX</dd></div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="section-head">
+                <p class="eyebrow mono">03 / contact</p>
+                <h2>Let's talk data</h2>
+                <p class="lede">Have a dataset that needs wrangling or a project you want to chat about? Find me here.</p>
+            </div>
+            <div class="contact-links">
+                <a href="https://joshyap.dev" class="contact-card">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
+                    <span><span class="contact-label mono">website</span>joshyap.dev</span>
+                </a>
+                <a href="https://github.com/joshyap" class="contact-card">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="filled"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+                    <span><span class="contact-label mono">github</span>@joshyap</span>
+                </a>
+            </div>
+        </section>
     </main>
-    <section id="about">
-        <div class="slide">
-            <h1>about me</h1>
-            <div>
-                <p>My name is Josh and I enjoy creating things that live on the internet. I became interested in web and software development when I had an idea for a business, but couldn't stand the idea of letting someone else build it. Even though that business is a highlight of my life, my biggest takeaway was finding my passion for code.</p>
-                <p>I have since worked at various startups and companies in increasingly technical roles. Although most of my formal experience is in data engineering and support engineering, working on the frontend is what I enjoy the most. I thrive on the quick and tangible feedback that comes along with frontend work. Also, I love knowing my work will be felt by end users directly.</p>
-                <p>Beyond code, I am very interested in personal finance. I have recently launched a blog at <a href="https://www.get-fired.com/" class="linkSize">get-fired.com</a> that I am using to document my journey to financial independence. I love learning and talking about personal finance because I think people can do their best work when they can have the right motivations behind their efforts. I will be launching an accompanying youtube channel sometime in the near future.</p>
-                <p>When I break away from the screens though, I love playing basketball and tennis, cycling, hiking, and traveling. I also tend to enjoy the finer things in life, like miniature tabletop wargaming, euro boardgames, vintage video games, and cryptocurrencies.</p>
-            </div>            
-        </div>   
-        <div class="nextSection">
-            <a href="#portfolio1" class="nextSection">&#8595;</a>            
-        </div>
-    </section>
-    
-    <section id="portfolio1">
-        <h1 class="sectionTitle">portfolio</h1>
-        <div class="portfolioSlide">            
-            <div class="portfolioItems">
 
-                <div>
-                    <a href="https://voluntold.surge.sh/"><img src="assets/images/voluntold.png" alt="voluntold application" class="portfolioImage"></a>                    
-                </div>
-                <div class="portfolioDescription">
-                    <h4><a href="https://voluntold.surge.sh/">VolunTOLD</a></h4>
-                    <p>After graduating from the University of Texas Coding Bootcamp, I eventually decided to serve as a teaching assistant. There were so many things I wish someone had told me when I was first learning to code and trying to break into tech. Each teaching assistant is generally assigned a small subset of students from a cohort. This lets students work in smaller groups and we get to know one another much better. Students are still often nervous though, especially towards the beginning of the bootcamp. I made this quick randomizer to make picking a random student volunteer quicker. It also utilizes the plotly library to display a bar chart showing the distribution of selections so that we can easily see if someone is particularly unlucky.</p>
-                </div>
-                <div>
-                    <a href="https://ercot.herokuapp.com/"><img src="assets/images/ercot.png" alt="ercot web scraper screenshot" class="portfolioImage"></a>                    
-                </div>
-                <div class="portfolioDescription">
-                    <h4><a href="https://ercot.herokuapp.com/">ERCOT Web Scraper</a></h4>
-                    <p>What better way to pass the time during a snow day than build a web scraper? This node app scrapes the <a href="https://www.ercot.com/content/cdr/html/real_time_system_conditions.html">ERCOT real time system conditions page</a> to get a quick snapshot of whether or not the power grid is able to meet current demand and loads a gif accordingly. I wrote this as a fun weekend project during the Texas winter storm of 2022, after a brutal 2021 storm.</p>
-                </div>                         
-            </div>
-        </div>
-        <div class="nextSection">
-            <a href="#portfolio2" class="nextSection">&#8595;</a>            
-        </div>        
-    </section>
-   
-    
-    <section id="portfolio2">
-        <h1 class="sectionTitle">portfolio</h1>
-        <div class="portfolioItems">
-            <div>
-                <a href="https://madebyja.com/"><img src="assets/images/madebyja.png" alt="made by ja agency homepage" class="portfolioImage"></a>                    
-            </div>
-            <div class="portfolioDescription">
-                <h4><a href="https://madebyja.com/">Made by JA</a></h4>
-                <p>It started as an idea with my wife, grew into a fun weekend project, and is now a real LLC! Made by JA (Josh and Annie) is a project run by my wife and I. We offer affordable web development, hosting, and design services for local small businesses.</p>
-            </div>
-            <div>
-                <a href="https://twitter.com/yapsays"><img src="assets/images/yapsays.png" alt="twitter bot screenshot" class="portfolioImage"></a>                    
-            </div>
-            <div class="portfolioDescription">
-                <h4><a href="https://twitter.com/yapsays">Yapsays Twitter Bot</a></h4>
-                <p>I wanted to give myself some motivaton so I made a twitter bot that tweets out a daily quote from a list of favorite quotes that I curated over the years. It was built in python using the tweepy library. Instead of a cronjob, there is an AWS CloudWatch trigger that runs every 4 hours. This was set up using AWS free tier account constraints and was a fun little hobby project.</p>
-            </div>    
-        </div>
-        <div class="nextSection">
-            <a href="#portfolio3" class="nextSection">&#8595;</a>
-        </div>
-    </section>
+    <footer class="site-footer mono">
+        <p>© <span id="year">2026</span> Josh Yap</p>
+    </footer>
 
-
-    <section id="portfolio3">
-        <h1 class="sectionTitle">portfolio</h1>
-        <div class="portfolioItems">
-            <div>
-                <a href="http://voowols.surge.sh/"><img src="assets/images/voowols.png" alt="voowols app screenshot" class="portfolioImage"></a>                    
-            </div>
-            <div class="portfolioDescription">
-                <h4><a href="http://voowols.surge.sh/">Voowols</a></h4>
-                <p>Some coworkers and I came up with a slack channel in which we have to follow a special rule for messaging. For every letter in a word, every vowel is replaced with an "o" and every "o" is replaced with "oo". It is written in javascript, users a bit of bootstrap for styling, and utilizes the Speech Synthesis Web API to read converted text in a variety of voices, accents, pitches, and languages.</p>
-            </div>
-            <div>
-                <a href="https://github.com/joshyap/x509-cert-formatter"><img src="assets/images/x509-cert-formatter.png" alt="cert formatter screenshot" class="portfolioImage"></a>                    
-            </div>
-            <div class="portfolioDescription">
-                <h4><a href="https://github.com/joshyap/x509-cert-formatter">X509 Certificate Formatter</a></h4>
-                <p>This CLI program was written in python in order to make a common task in my day job much easier and quicker. The program takes an input string and formats it as an certificate so that you do not need to manually manipulate or check its validitiy.</p>
-            </div>   
-        </div>
-        <div class="nextSection">
-            <a href="#portfolio4" class="nextSection">&#8595;</a>
-        </div>
-    </section>
-
-    <section id="portfolio4">
-        <h1 class="sectionTitle">portfolio</h1>
-        <div class="portfolioItems">
-            <div>
-                <a href="https://joshyap.github.io/scheduler/"><img src="assets/images/workday-scheduler.png" alt="workday scheduler app screenshot" class="portfolioImage"></a>                    
-            </div>
-            <div class="portfolioDescription">
-                <h4><a href="https://joshyap.github.io/scheduler/">Day Scheduler</a></h4>
-                <p>This workday scheduling application utilizes local storage to save user input for every hour block of the day. The hour blocks are color coded to indiciate past, present, and future states relative to the current time and are updated on a timer. The next iteration of this app will replace local storage with database functionality and additional options for personalization.</p>
-            </div>
-            <div>
-                <a href="https://joshyap.github.io/pw-generator/"><img src="assets/images/pw-generator.png" alt="password generator screenshot" class="portfolioImage"></a>                                 
-            </div>
-            <div class="portfolioDescription">
-                <h4><a href="https://joshyap.github.io/pw-generator/">Password Generator</a></h4>
-                <p>This password generator generates a randomized password based on user selected contraints for length, lowercase/uppercase, special characters, and numbers. </p>
-            </div>
-        </div>
-        <div class="nextSection">
-            <a href="#contact" class="nextSection">&#8595;</a>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="slide">
-            <h1>contact</h1>
-            <div class="contactIcons">
-                <a href="https://www.linkedin.com/in/joshuacyap/"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/joshyap"><i class="fab fa-github"></i></a>
-                <a href="https://joshyap-bucket.s3.amazonaws.com/joshyap-resume.pdf"><i class="far fa-file"></i></a>
-                <a href="https://twitter.com/joshyaps"><i class="fab fa-twitter"></i></a>
-                <a href= "mailto:joshua.c.yap@gmail.com"><i class="fas fa-envelope"></i></a>                 
-            </div>
-        </div>
-    </section>    
-    <script src="https://kit.fontawesome.com/12e06ec26c.js" crossorigin="anonymous"></script>
-    <script src="assets/js/app.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
