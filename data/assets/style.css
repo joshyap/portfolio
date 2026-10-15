@@ -252,9 +252,26 @@ svg .dot {
 /* projects */
 
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
+}
+
+.project-grid > .card {
+    flex: 0 0 calc((100% - 48px) / 3);
+}
+
+@media (max-width: 1039px) {
+    .project-grid > .card {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+}
+
+@media (max-width: 695px) {
+    .project-grid > .card {
+        flex-basis: 100%;
+    }
 }
 
 .card {
@@ -284,6 +301,11 @@ svg .dot {
     height: 100%;
     object-fit: cover;
     object-position: top;
+}
+
+.card-media-chart img {
+    object-fit: contain;
+    object-position: center;
 }
 
 .card-media-svg {
@@ -496,10 +518,6 @@ svg .dot {
 
     .section {
         padding-top: 72px;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
     }
 
     .stats {
